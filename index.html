@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>BBQ - Calculator</title>
+</head>
+
+<body background="./assets/images/wood.jpg">
+    <div class="container">
+        <div class="title">
+            <div class="container-title">
+                <h1 class="main-title">BBQ</h1>
+                <h2 class="second-title">Calculator</h2>
+            </div>
+        </div>
+        <div class="form">
+            <form>
+                <label for="adultos">Adultos:</label>
+                <input type="number" name="adultos" id="adultos">
+                <label for="criancas">Crianças:</label>
+                <input type="number" name="criancas" id="criancas">
+                <label for="duracao">Duração:</label>
+                <input type="number" name="duracao" id="duracao" placeholder="In hours">
+                <button type="button" id="btn-submit" onclick="Calculate()">Calculate</button>
+            </form>
+            <div id="results"></div>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
