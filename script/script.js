@@ -15,9 +15,9 @@ function Calculate() {
     var totalMeat = inputAdultos.value * meatPerPerson(inputDuracao.value) + (inputCriancas.value * meatPerPerson(inputDuracao.value) / 2);
     var totalDrinks = inputAdultos.value * drinkPerPerson(inputDuracao.value) + (inputCriancas.value * drinkPerPerson(inputDuracao.value) / 2);
 
-    var text = '<p>Total meat: ' + totalMeat / 1000 + ' Kg</p>' +
-        '<p>Total beer: ' + totalBeer / 1000 + ' L</p>' +
-        '<p>Total drinks: ' + totalDrinks / 1000 + ' L</p>';
+    var text = '<p>Total carne: ' + totalMeat / 1000 + ' Kg</p>' +
+        '<p>Total cerveja: ' + totalBeer / 1000 + ' L</p>' +
+        '<p>Total bebida: ' + totalDrinks / 1000 + ' L</p>';
     result.innerHTML = text;
 }
 function beerPerPerson(duracao) {
